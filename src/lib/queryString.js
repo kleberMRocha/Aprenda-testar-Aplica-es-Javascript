@@ -1,0 +1,1 @@
+module.exports.queryString = (obj) => new URLSearchParams(obj).toString();

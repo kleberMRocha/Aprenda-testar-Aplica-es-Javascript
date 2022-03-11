@@ -9,7 +9,7 @@ const convertNestedToFlat = (nestedArray) => {
         });
 }
 
-module.exports.queryString = (obj) => {
+export const queryString = (obj) => {
     const value = Object.values(obj);
     if (!AllowdFormat(value)) return new URLSearchParams(obj).toString();
     throw new Error('Please Check yout parms');

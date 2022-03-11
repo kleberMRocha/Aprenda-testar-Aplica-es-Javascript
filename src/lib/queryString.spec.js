@@ -21,7 +21,7 @@ describe('queryString.js', () => {
         }).toThrowError();
     });
 
-    it.only('should create a object from an query string ', () => {
+    it('should create a object from an query string ', () => {
 
         expect(parse('name=kleber&age=29')).toEqual({ "age": "29", "name": "kleber" });
         expect(parse('name=kleber&age=29&skills=Javascript%2Ccss%2Chtml')).toEqual({ "age": "29", "name": "kleber", "skills": ["Javascript", "css", "html",] });
